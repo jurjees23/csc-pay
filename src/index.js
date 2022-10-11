@@ -99,7 +99,7 @@ export default function Paypli(props) {
       const address = await signer.getAddress();
 
       setbtnLabel("Processing...")
-
+      var transactionHash;
       //CALL TRANSACTION
       if (props.paymethod === "TCET" || props.paymethod === "CET") {
         const params = [{
@@ -107,7 +107,7 @@ export default function Paypli(props) {
           to: props.receiverAddress,
           value: ethers.utils.parseUnits(props.amount, 'ether').toHexString()
         }];
-        var transactionHash = await providerConnect.send('eth_sendTransaction', params)
+        transactionHash = await providerConnect.send('eth_sendTransaction', params)
 
       } else {
         props.onError({ paymethod: "Pay Method Not Available" });
