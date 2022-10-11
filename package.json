@@ -2,7 +2,7 @@
   "name": "csc-pay",
   "version": "1.0.1",
   "description": "Crypto CSC payment gateway ",
-  "author": "GoPlugin",
+  "author": "Jurjees23",
   "license": "MIT",
   "repository": "jurjees23/csc-pay",
   "main": "dist/index.js",
