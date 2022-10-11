@@ -15,7 +15,7 @@ const App = () => {
       'Your Payment done successfully',
       'Okay',
       () => {
-        window.location = `https://testnet.coinex.net/tx/${data.hash}`
+        window.open(`https://testnet.coinex.net/tx/${data.hash}`)
         window.location.reload()
       },
     );
