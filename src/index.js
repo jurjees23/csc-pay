@@ -45,9 +45,8 @@ export default function Paypli(props) {
         options: {
           infuraId: "27e484dcd9e3efcfd25a83a78777cdf1",
           rpc: {
-            50: "https://xdcpayrpc.blocksscan.io/",
-            51: "https://rpc.apothem.network",
-            53: "https://testnet-rpc.coinex.net"
+            53: "https://testnet-rpc.coinex.net",
+            52: "https://rpc.coinex.net"
           },
         }
       },
